@@ -1,0 +1,67 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, label {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the main container */
+.pos-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the header */
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style the content container */
+.content {
+    display: flex;
+    flex-direction: row; /* Arrange the big boxes side by side */
+}
+
+/* Style the product box and scanned box */
+.product-box, .scanned-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 50%; /* Set the width to 50% to make them side by side */
+}
+
+/* Style headings for product list and scanned products */
+h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style individual product and scanned product items */
+.product, .scanned-product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Style total amount and buttons */
+.total-amount, .checkout-buttons {
+    text-align: center;
+}
+
+/* Style buttons */
+.checkout-button, .print-receipt-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout-button:hover, .print-receipt-button:hover {
+    background-color: #555;
+}

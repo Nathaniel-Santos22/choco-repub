@@ -1,0 +1,95 @@
+h1{
+    color: white;
+    padding: 15px 0 15px 0;
+}
+header{
+    background-color: #333;
+}
+body{
+    background-color: black;
+}
+main{
+    max-width: 1500px;
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+h3, p{
+    color: white;
+}
+main .card{
+    background-color: black;
+    max-width: 300px;
+    flex: 1 1    210px;
+    text-align: center;
+    height: 420px;
+    border: 2px solid grey;
+    margin: 20px;
+}
+
+main .card .image{
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+main .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .card .caption{
+    padding-left: 1em;
+    text-align: left;
+    line-height: 3em;
+    height: 25%;
+}
+
+main .card .caption p{
+    font-size: 1.5rem;
+}
+
+main .card button{
+    border: 2px solid white;
+    padding: 1em;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 2em;
+    font-weight: bold;
+    position: relative;
+    color: white;background-color: black;
+}
+
+main .card button:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: white;
+    transition: all .5s;
+    margin: 0;
+}
+
+main .card button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: white;
+    transition: all .5s;
+}
+
+main .card button:hover::before{
+    width: 30%;
+}
+
+main .card button:hover::after{
+    width: 30%;
+}
